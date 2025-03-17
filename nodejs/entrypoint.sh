@@ -37,7 +37,7 @@ cd /home/container || exit 1
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mnode -v\n"
 node -v
 
-[ ! -d "./node_modules" ] && npm install
+[ ! -d "./node_modules" ] && npm install --save
 
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
 # variable format of "${VARIABLE}" before evaluating the string and automatically
