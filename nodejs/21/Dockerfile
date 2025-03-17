@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:20-alpine
+FROM        --platform=$TARGETOS/$TARGETARCH node:21-alpine
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
