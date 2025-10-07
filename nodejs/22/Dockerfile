@@ -31,6 +31,8 @@ LABEL       org.opencontainers.image.licenses=MIT
 RUN         apk add --upgrade --no-cache ca-certificates curl ffmpeg git openssl sqlite tar tzdata npm python3 build-base g++ cairo-dev pango-dev jpeg-dev giflib-dev g++ bash imagemagick \
 	&& adduser -D -h /home/container container
 
+RUN         apk add --no-cache font-terminus font-inconsolata font-dejavu font-noto font-noto-cjk font-awesome font-noto-extra
+
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
